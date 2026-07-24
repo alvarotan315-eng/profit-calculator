@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>💰 Profit Calculator</h1>
+        <p class="subtitle">
+            Hitung laba bisnis dengan cepat.
+        </p>
+
+        <div class="form-group">
+
+            <label for="sellingPrice">
+                Harga Jual
+            </label>
+
+            <input
+                type="text"
+                id="sellingPrice"
+                placeholder="Rp 0"
+                autocomplete="off">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="costPrice">
+                Modal (COGS)
+            </label>
+
+            <input
+                type="text"
+                id="costPrice"
+                placeholder="Rp 0"
+                autocomplete="off">
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="operationalCost">
+                Biaya Operasional
+            </label>
+
+            <input
+                type="text"
+                id="operationalCost"
+                placeholder="Rp 0"
+                autocomplete="off">
+
+        </div>
+
+        <button id="calculateBtn">
+            Hitung
+        </button>
+
+        <button id="resetBtn" class="secondary">
+            Reset
+        </button>
+
+        <div class="result">
+
+            <h2>Hasil</h2>
+
+            <div class="result-item">
+                <span>Laba Kotor</span>
+                <strong id="grossProfit">
+                    Rp 0
+                </strong>
+            </div>
+
+            <div class="result-item">
+                <span>Laba Bersih</span>
+                <strong id="netProfit">
+                    Rp 0
+                </strong>
+            </div>
+
+            <div class="result-item">
+                <span>Gross Margin</span>
+                <strong id="grossMargin">
+                    0%
+                </strong>
+            </div>
+
+            <div class="result-item">
+                <span>Net Margin</span>
+                <strong id="netMargin">
+                    0%
+                </strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
